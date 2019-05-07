@@ -39,7 +39,7 @@ public class UserOfSorts {
 
         // insertion sort                   
         oneTest( "insertion sort "
-               , new InsertionSorter( unsorted)
+               , new SelectionSorter( unsorted)
                );
     }
 
