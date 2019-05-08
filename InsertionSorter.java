@@ -16,6 +16,16 @@ public class InsertionSorter extends Sorter {
     /**
       sort the user's data, implementing insertion sort
      */
+	 
+	 /*
+	 pre-condition: a list with a sorted region and a sorted region
+	 
+	 Inserts the first unsorted element at the position, temporary or permanent, that 
+	 makes the list ordered alphabetically and shifts the larger values one index over.
+	 
+	 post-condition: a list with a one bigger sorted region and 
+					 a one smaller unsorted region.
+	*/
     public void mySort(){
 		 for(int currentSortIndex = 1; currentSortIndex < elements.size(); currentSortIndex++){
 				 insert1(elements, currentSortIndex);

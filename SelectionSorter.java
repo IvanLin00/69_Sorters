@@ -16,6 +16,15 @@ public class SelectionSorter extends Sorter {
     /**
       sort the user's data, implementing insertion sort
      */
+	 /*
+	 pre-condition: a list with a sorted region and a sorted region
+	 
+	 Finds the index of the smallest index and swaps the values 
+	 between that index and index 0. 
+	 
+	 post-condition: a list with a one bigger sorted region and 
+					 a one smaller unsorted region.
+	*/
     public void mySort() {
 		ArrayList<String> unordered = elements;
 		for (int i = 0; i< unordered.size() - 1; i++){
