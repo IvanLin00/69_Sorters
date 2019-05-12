@@ -12,34 +12,16 @@ public class UserOfSorts {
              way to build a Collection from literals,
              suitable for constructing an ArrayList */
           Arrays.asList(
-            // data convenient for debugging an insertion sort
-              // A single piece of data is already in order trivially.
-              "B"
+              // one sorted sub-list
+            "4", "5", "6", "9"
 
-              // data destined for the END of the sorted region
-            , "D"
-
-              /* more data for the end, so subsequent tests
-                 process a larger sorted region
-                */
-            , "F", "J", "L", "N"
-
-              // data destined for the MIDDLE of the sorted region
-            , "H"
-
-              // data destined for the START of the sorted region
-            , "A"
-
-              /* buffering data, merely to keep the preceding data 
-                 from having the special property of being last in
-                 the input list.
-               */
-            , "Z"  
+              // the other sorted sub-list
+            , "2", "3", "4", "6", "7", "J", "Q", "K"
             ));
 
         // insertion sort                   
         oneTest( "insertion sort "
-               , new SelectionSorter( unsorted)
+               , new SubSortThenMerge_Sorter( unsorted)
                );
     }
 
